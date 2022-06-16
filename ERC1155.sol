@@ -8,6 +8,11 @@ contract MyToken is ERC1155, Ownable {
 
     uint256 MintCount;
     uint256 id = 1;
+    mapping(address => Counter) minter; 
+
+    struct Counter{
+        uint count;
+    }
 
     constructor() ERC1155("https://api.mysite.com/tokena/{id}") {}
 
@@ -18,11 +23,12 @@ contract MyToken is ERC1155, Ownable {
     function mint()
         public
     {    
-        //require(account.balance > )
+        require(minter[msg.sender].count == 0, "CAN MINT ONLY ONCE FOR SAME CONTRACT");
         _mint(msg.sender, id, 1, "");
+        minter[msg.sender].count ++;
         id++;
         MintCount++;
-    }
+        }
 
     function showMintCount() public view returns(uint256){
         return MintCount;
