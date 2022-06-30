@@ -1,0 +1,18 @@
+
+1. admin connects to metamask
+Salil
+
+2. admin creates a program/course (plus button + modal in the explore page)
+form - controlled components
+Name, Description, Image, External Link
+Kshitij will review the code createCourse()
+Salil will store the data to the IPFS & to the localStorage, along with IPFS link.
+
+3. Explore page
+Kshitij will change the design of the cards
+Salil will fetch the data from the localStorage and render the cards
+
+
+The user selects the program/course
+The admin marks him completed
+The user can claim the NFT
