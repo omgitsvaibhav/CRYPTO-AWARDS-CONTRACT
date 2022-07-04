@@ -8,7 +8,7 @@ import { ethers } from "ethers";
 
 import { ExternalLink } from "react-feather";
 
-const ContractAddress = "0x58cf666b9c2626974c3e046ab52d9ce459619dff";
+const ContractAddress = ""; //hard code contract address
 
 const ContractABI = [
 	{
