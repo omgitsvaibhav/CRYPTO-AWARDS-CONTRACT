@@ -34,7 +34,7 @@ function App() {
       <WagmiProvider client={wagmiClient}>
         <RainbowKitProvider chains={chains}>
           <BrowserRouter>
-            <NavBar />
+          <NavBar/>
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="create-program" element={<CreateProgram/>} />
