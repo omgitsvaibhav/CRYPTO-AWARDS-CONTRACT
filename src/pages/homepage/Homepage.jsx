@@ -1,6 +1,6 @@
 import React from "react";
-// import background from '../assets/images/background.jpg'
-// import './Homepage.css'
+import background from '../assets/images/background.jpg'
+import './Homepage.css'
 import herosection from "../../assets/images/herosection.svg";
 import aboutus from "../../assets/images/aboutus.svg";
 import using from "../../assets/images/using.svg";
