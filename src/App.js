@@ -36,6 +36,9 @@ function App() {
           <BrowserRouter>
             <NavBar />
             <Routes>
+              <Route exact path="/">
+                <Redirect element={<Homepage />} />
+              </Route>
               <Route path="/" element={<Homepage />} />
               <Route path="create-program" element={<CreateProgram/>} />
               <Route path="admin" element={<Adminpage />} />
